@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Study Calculus I with section guides, flashcards, practice problems, and interactive graphs.">
+  <meta name="theme-color" content="#13271f">
+  <title>Calc One | Calculus I Study Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="course.js"></script>
+  <script defer src="deck.js"></script>
+  <script defer src="math.js"></script>
+  <script defer src="graphs.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="container top-inner">
+      <a class="brand" href="#home"><span class="logo" aria-hidden="true">∫</span> Calc One</a>
+      <nav aria-label="Study modes">
+        <a href="#topics">Topics</a><a href="#cards">Flashcards</a><a href="#practice">Practice</a>
+        <a href="#graphs">Graphs</a><a href="#exam">Exam review</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container" tabindex="-1"></main>
+  <footer class="container site-footer"><span>Calc One · Independent student study resource</span>
+
+  <template id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Calculus I · MATH 2413</p>
+        <h1>Calculus makes more sense <em>in practice.</em></h1>
+        <p>Find your class section, work through an example, and test what you remember.</p>
+        <div class="actions"><a class="button primary" href="#topics">Browse course topics</a><a class="button secondary" href="#cards">Study flashcards</a></div>
+      </div>
+      <div class="hero-figure" aria-hidden="true">
+        <canvas id="hero-graph" width="550" height="300"></canvas>
+        <div class="graph-caption"><span class="key"></span> <span>Riemann sum · right endpoints</span></div>
+      </div>
+    </section>
+    <section class="mode-section">
+      <h2>Choose how to study</h2>
+      <div class="mode-grid">
+        <a class="tile" href="#topics"><span class="symbol" aria-hidden="true">ƒ</span><h3>Topic guides</h3><p>Key ideas and a worked example for each course section.</p></a>
+        <a class="tile" href="#cards"><span class="symbol" aria-hidden="true">↻</span><h3>Flashcards</h3><p>Recall a formula, flip the card, and revisit what you missed.</p></a>
+        <a class="tile" href="#practice"><span class="symbol" aria-hidden="true">✎</span><h3>Practice problems</h3><p>Work on paper, get a hint, and check the reasoning.</p></a>
+        <a class="tile" href="#method"><span class="symbol" aria-hidden="true">?</span><h3>Pick the method</h3><p>Identify which technique to use before doing the algebra.</p></a>
+        <a class="tile" href="#graphs"><span class="symbol" aria-hidden="true">∿</span><h3>Interactive graphs</h3><p>Move a tangent or change the number of rectangles.</p></a>
+        <a class="tile" href="#exam"><span class="symbol" aria-hidden="true">✓</span><h3>Exam review</h3><p>Try a mixed set and see which sections to review.</p></a>
+      </div>
+    </section>
+  </template>
+</body>
+</html>
